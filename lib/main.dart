@@ -2,25 +2,48 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(new MaterialApp(
-    title: 'Naveen',
-    home: Kelaniya(),
+    title: "Alert Dialog",
+    home: HomeScreen(),
   ));
 }
 
-class Kelaniya extends StatelessWidget {
-  const Kelaniya({Key key}) :super(key:key);
-  
+class HomeScreen extends StatelessWidget{
+  //const HomeScreen({Key key}) :super(key:key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Raja"),),
-      body: Center(
-        child: RaisedButton(
-          child:Text("Press"),
-          onPressed: (){
-            
-          },
-        ),
+      appBar: AppBar(title: Text('button'),),
+      body: MainStatefullWidget(),
+    );
+  }
+}
+
+class MainStatefullWidget extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() => MainStatefullWidgetState();  
+}
+
+class MainStatefullWidgetState extends State{
+  int count = 0;
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text (
+            'Number $count',
+            style: TextStyle(fontSize: 20.0)
+          ),
+          RaisedButton(
+            onPressed: () {
+              setState(() {
+                count = count + 1;
+              });
+            },
+            child: Text('Click'),
+          )
+        ],
       ),
     );
   }
