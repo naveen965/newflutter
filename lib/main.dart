@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Kelaniya());
+  runApp(new MaterialApp(
+    title: 'Naveen',
+    home: Kelaniya(),
+  ));
 }
 
 class Kelaniya extends StatelessWidget {
