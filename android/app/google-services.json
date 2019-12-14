@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "442114465628",
+    "firebase_url": "https://newflutter-adbb3.firebaseio.com",
+    "project_id": "newflutter-adbb3",
+    "storage_bucket": "newflutter-adbb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442114465628:android:411438d76f25a9bcf36b99",
+        "android_client_info": {
+          "package_name": "com.example.newflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442114465628-6d4tf44vke248p28001snekfntibep6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIIpbFx85dVApKMlsDwChfEtbI0T3JzUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442114465628-6d4tf44vke248p28001snekfntibep6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

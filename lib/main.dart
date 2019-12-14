@@ -24,21 +24,18 @@ class MainStatefullWidget extends StatefulWidget{
 }
 
 class MainStatefullWidgetState extends State{
-  int count = 0;
+  var picture = 'https://blog.dupontregistry.com/wp-content/uploads/2018/09/post_malone_lamborghini.jpg';
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text (
-            'Number $count',
-            style: TextStyle(fontSize: 20.0)
-          ),
+          Image.network(picture),
           RaisedButton(
             onPressed: () {
               setState(() {
-                count = count + 1;
+                picture = 'http://www.autoguide.com/blog/wp-content/uploads//2017/09/Lamborghini-Asterion-Concept.jpg';
               });
             },
             child: Text('Click'),
@@ -47,6 +44,28 @@ class MainStatefullWidgetState extends State{
       ),
     );
   }
+  /*
+  var picture = 'image/test.png';
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Image.asset(picture),
+          RaisedButton(
+            onPressed: () {
+              setState(() {
+                picture = 'image/temp.png';
+              });
+            },
+            child: Text('Click'),
+          )
+        ],
+      ),
+    );
+  }
+  */
 }
 /*
 home: Center (
