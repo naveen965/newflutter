@@ -24,7 +24,7 @@ class MainStatefullWidget extends StatefulWidget{
 }
 
 class MainStatefullWidgetState extends State{
-  var picture = 'https://blog.dupontregistry.com/wp-content/uploads/2018/09/post_malone_lamborghini.jpg';
+  /*var picture = 'https://blog.dupontregistry.com/wp-content/uploads/2018/09/post_malone_lamborghini.jpg';
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -44,7 +44,7 @@ class MainStatefullWidgetState extends State{
       ),
     );
   }
-  /*
+  */
   var picture = 'image/test.png';
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,7 @@ class MainStatefullWidgetState extends State{
       ),
     );
   }
-  */
+  
 }
 /*
 home: Center (
